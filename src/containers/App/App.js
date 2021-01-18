@@ -46,7 +46,7 @@ const App = ({ todos, onLoad, onUpdate }) => {
 
   return (
     <div className={styles.screen}>
-      <ul className={styles.list}>
+      <div className={styles.list}>
         <List>
           {sort(todos).map((t) => (
             <ListItem
@@ -57,7 +57,7 @@ const App = ({ todos, onLoad, onUpdate }) => {
             />
           ))}
         </List>
-      </ul>
+      </div>
     </div>
   );
 };
